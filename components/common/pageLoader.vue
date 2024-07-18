@@ -1,7 +1,7 @@
 <template>
-    <div v-if="loading" class="page-loader-container d-flex flex-column align-items-center justify-content-center">
-        <i class="fad fa-spinner-third spinner fa-spin"></i>
-    </div>
+    <v-overlay v-if="loading" class="page-loader-container" :value="true">
+        <v-progress-circular indeterminate color="primary" size="80"></v-progress-circular>
+    </v-overlay>
 </template>
 <script lang="ts">
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator'

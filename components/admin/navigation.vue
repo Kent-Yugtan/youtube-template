@@ -39,16 +39,13 @@ import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
 })
 
 export default class Navigation  extends Vue {
-
     drawer:boolean = false;
     AppTitle: String = 'Awesome Title';
-
-    menuItems:any = [
+    menuItems:Array<any> = [
         { title: 'Home', path: '/template', icon: 'fas fa-home-alt' },
         { title: 'Sign Up', path: '/signup', icon: 'fas fa-user-plus' },
         { title: 'Sign In', path: '/signin', icon: 'fas fa-sign-in-alt' }
     ]
-
 }
 </script>
 

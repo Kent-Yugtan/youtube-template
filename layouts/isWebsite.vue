@@ -5,8 +5,8 @@
             <PageLoader/>
             <NuxtChild/>
         </v-main>
+        
         <Footer/>
-
     </v-app>
 </template>
 <script lang='ts'>
